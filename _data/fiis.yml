@@ -1,0 +1,10 @@
+- ticker: MXRF11
+  segmento: Recebíveis
+  preco: 10.50
+  dy: 12.3
+  pvp: 0.98
+- ticker: HGLG11
+  segmento: Logístico
+  preco: 189.00
+  dy: 8.7
+  pvp: 1.15

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Visão Geral
+---
+
+<h1>Dashboard de FIIs</h1>
+
+<!-- Tabela de FIIs -->
+<table>
+  <tr>
+    <th>Ticker</th>
+    <th>Segmento</th>
+    <th>Preço</th>
+    <th>DY (%)</th>
+    <th>P/VP</th>
+  </tr>
+  {% for fii in site.data.fiis %}
+  <tr>
+    <td>{{ fii.ticker }}</td>
+    <td>{{ fii.segmento }}</td>
+    <td>R$ {{ fii.preco }}</td>
+    <td>{{ fii.dy }}</td>
+    <td>{{ fii.pvp }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<!-- Índices do Mercado -->
+<div class="indices">
+  {% for indice in site.data.indices %}
+  <div class="indice">
+    <h3>{{ indice.nome }}</h3>
+    <p>{{ indice.valor }} pts ({{ indice.variacao }}%)</p>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,27 @@
+```html
+layout: default
+title: Meu Portfólio
+<h1>Meu Portfólio</h1>
+<form id="portfolioForm">
+<input type="text" placeholder="Ticker (ex: MXRF11)" required>
+<input type="number" placeholder="Quantidade" required>
+<button type="submit">Adicionar</button>
+</form>
+
+<table id="portfolioTable">
+<tr>
+<th>Ticker</th>
+<th>Quantidade</th>
+<th>Preço Médio</th>
+</tr>
+</table>
+
+<script>
+// Salva dados no localStorage
+document.getElementById('portfolioForm').addEventListener('submit', function(e) {
+e.preventDefault();
+const ticker = this.elements[0].value;
+const quantidade = this.elements[1].value;
+// Lógica para salvar no localStorage
+});
+</script>

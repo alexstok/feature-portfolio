@@ -1,0 +1,6 @@
+- nome: Ibovespa
+  valor: 125.450
+  variacao: +1.2
+- nome: IFIX
+  valor: 3.250
+  variacao: -0.3
